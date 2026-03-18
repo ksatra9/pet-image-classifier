@@ -45,6 +45,7 @@ pet-image-classifier/
 
 ### 1. Clone the repository
 git clone https://github.com/ksatra9/pet-image-classifier.git
+
 cd pet-image-classifier
 
 ### 2. Install dependencies
@@ -65,7 +66,9 @@ It will be automatically downloaded when running the app.
 
 ##  Demo
 image.png
+
 image-1.png
+
 image-2.png
 ---
 
