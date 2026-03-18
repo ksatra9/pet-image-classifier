@@ -2,10 +2,15 @@ import streamlit as st
 import tensorflow as tf
 from PIL import Image
 import numpy as np
+import gdown
+import os
 
-# Load model
+# Download model if not exists
 @st.cache_resource
 def load_model():
+    if not os.path.exists("model.h5"):
+        url = "https://drive.google.com/uc?id=1eNbYsNbUCG_TiYMQ_T2zON-crFSO592z"
+        gdown.download(url, "model.h5", quiet=False)
     return tf.keras.models.load_model("model.h5")
 
 model = load_model()
